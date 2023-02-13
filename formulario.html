@@ -12,7 +12,7 @@
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
-  <form class="formulario">
+  <form class="formulario" method="post" onsubmit="agregarInvitados(e)"> <!-- falta onsubmit y metodo post -->
     Nombre <input type="text" name="name" id="name">
     <br />
     Edad <input type="number" name="age" id="age">
@@ -31,10 +31,13 @@
 
   <div>
     <h2>Lista de invitados</h2>
+    <button id="boton-borrar" class="" onclick=" ">
+    <span>Eliminar invitado</span> <!-- Se agrego el boton para borrar invitados -->
+    </button>
 
   </div>
 
-  <script src="../formulario.js"></script>
+  <script src="./formulario.js"></script> <!-- Se corrigio la ruta del formulario -->
 </body>
 
 </html>

@@ -15,6 +15,7 @@ formulario.onsubmit = function(e) {
   var nacionalidad = na.options[i].value
   console.log(nombre, edad)
   console.log(nacionalidad)
+  //en esta sección se validan los datos de entrada
 
   if (nombre.length === 0) {
     n.classList.add("error")
